@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', serif;
+    font-size: 16px;
+}
+
+.bg-intro-banner {
+    background-image: url('../images/bg-banner-img.jpg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #c9223d;
+}
+
+.section-intro-banner {
+    position: relative;
+}
+
+.section-intro-banner::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%;    
+}
+
+.section-intro-banner .content {
+    position: absolute;
+    width: 100%;
+    max-width: 1140px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
